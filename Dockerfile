@@ -8,7 +8,7 @@ WORKDIR /usr/local
 #
 COPY install.sh install.sh
 # exposing ports
-EXPOSE 61616
+EXPOSE 1883 5672 8161 61613 61614 61616
 # installing curl
 RUN apk add --update curl
 # install activemq

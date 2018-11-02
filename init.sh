@@ -1,4 +1,4 @@
 #! /bin/sh
 
 docker build -t kaneda/activemq .
-docker run -d --name amq kaneda/activemq
+docker run -it --name amq -P kaneda/activemq
