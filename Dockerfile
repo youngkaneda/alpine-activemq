@@ -13,4 +13,3 @@ EXPOSE 61616
 RUN apk add --update curl
 # install activemq
 ENTRYPOINT sh install.sh && /bin/sh
-# ENTRYPOINT ["sh", "install.sh"]
