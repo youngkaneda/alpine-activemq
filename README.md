@@ -3,7 +3,12 @@
 > #### A simple apache ActiveMQ dockerfile
 
 
-First run the following code ```sh init.sh```  It will construct the docker image, run it and open a shell in the dir where the [ActiveMQ](http://activemq.apache.org/) was installed.
+First build the docker image:  
+```docker build -t <repo>/<image-name> .```
+
+
+Second run a container and pass a valid port to bind to the [ActiveMQ](http://activemq.apache.org/) broker default port, that is:  
+```docker run -it -p <valid-port>:61616 --name <container-name> <repo>/<image-name>```
 
 
 The entrypoint script will start the broker automatically, to stop it just type ```ctrl c``` and will stop.
