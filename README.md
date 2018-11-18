@@ -1,4 +1,4 @@
-# alpine-activemq-dockerfile
+# alpine-activemq
 
 > #### A simple apache ActiveMQ dockerfile
 
